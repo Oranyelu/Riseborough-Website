@@ -1,0 +1,70 @@
+.culinary-section {
+  background-color: var(--primary-background);
+}
+
+.culinary-content {
+  padding-right: 0;
+}
+
+.culinary-body {
+  font-size: 1.25rem;
+  color: #444444;
+  margin-bottom: 2.5rem;
+}
+
+.service-highlight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--soft-ui);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.highlight-line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--accent);
+}
+
+.service-highlight p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.culinary-image-wrapper {
+  position: relative;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.culinary-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.img-backdrop {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .culinary-content {
+    padding-right: 3rem;
+  }
+}

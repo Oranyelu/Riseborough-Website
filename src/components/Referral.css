@@ -1,0 +1,36 @@
+.referral-section {
+  background-color: var(--accent); /* #3A4D39 */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.prestige-callout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.prestige-callout h2 {
+  color: #F2E8DA;
+  margin-bottom: 2rem;
+}
+
+.prestige-callout p {
+  font-size: 1.25rem;
+  color: #E0E0E0;
+  margin-bottom: 3rem;
+  font-family: var(--font-body);
+}
+
+.prestige-callout .btn-primary {
+  background-color: var(--primary-background);
+  color: var(--accent);
+}
+
+.prestige-callout .btn-primary::before {
+  background-color: var(--soft-ui);
+}
