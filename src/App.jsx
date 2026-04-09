@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Reliability from './components/Reliability';
@@ -6,8 +6,10 @@ import Gallery from './components/Gallery';
 import Culinary from './components/Culinary';
 import Referral from './components/Referral';
 import Footer from './components/Footer';
+import BookingModal from './components/BookingModal';
 
 function App() {
+  const [isBookingOpen, setBookingOpen] = useState(false);
   
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -46,12 +48,13 @@ function App() {
 
   return (
     <div className="App">
-      <Hero />
+      <Hero onOpenBooking={() => setBookingOpen(true)} />
       <Reliability />
       <Gallery />
       <Culinary />
       <Referral />
       <Footer />
+      <BookingModal isOpen={isBookingOpen} onClose={() => setBookingOpen(false)} />
     </div>
   );
 }

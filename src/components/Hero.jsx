@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ onOpenBooking }) => {
   return (
     <section className="hero-section" id="hero">
       <div className="hero-background">
@@ -21,9 +21,9 @@ const Hero = () => {
         <div className="hero-buttons fade-in fade-in-delay-2">
           <button 
             className="btn-primary"
-            onClick={() => window.location.href = "mailto:bookings@riseborough.com?subject=Booking Inquiry"}
+            onClick={onOpenBooking}
           >
-            Book Your Stay
+            Check Availability & Book
           </button>
           <button 
             className="btn-secondary"

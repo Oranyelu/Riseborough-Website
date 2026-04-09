@@ -13,8 +13,8 @@ const Footer = () => {
             Centenary Golf City, Enugu
           </p>
           <div className="footer-social">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              Instagram: @RiseboroughApartments
+            <a href="https://www.instagram.com/riseborough.apartment?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+              Instagram: @riseborough.apartment
             </a>
           </div>
         </div>
